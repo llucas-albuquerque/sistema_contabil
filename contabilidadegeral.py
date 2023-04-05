@@ -119,7 +119,7 @@ class RelatorioContabil:
         conta_receber = ContaReceber(nome, valor, data_vencimento, data_pagamento)
         self.contas_receber.append(conta_receber)
 
-        def gerar_relatorio_contas_pagar(self):
+    def gerar_relatorio_contas_pagar(self):
         print('Contas a Pagar:')
         for conta in self.contas_pagar:
             print(f'{conta.nome} - R$ {conta.valor} - Vencimento: {conta.data_vencimento} - Status: {conta.status}')
